@@ -8,6 +8,20 @@ spring:
   cloud:
     gateway:
       routes:
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user-service/**
+          filters:
+            - CustomFilter
+
+        - id: catalog-service
+          uri: lb://CATALOG-SERVICE
+          predicates:
+            - Path=/catalog-service/**
+          filters:
+            - CustomFilter
+
         - id: first-service
           uri: lb://FIRST-SERVICE
           predicates:
