@@ -9,4 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: file:///home/woong/workspace/git-local-repo
+#          uri: file:///home/woong/workspace/git-local-repo
+          uri: https://github.com/woong7361/spring-cloud-config
+          username: woong7361
+          password: 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
