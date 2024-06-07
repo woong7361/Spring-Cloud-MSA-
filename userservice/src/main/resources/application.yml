@@ -17,11 +17,11 @@ spring:
       ddl-auto: update
 
 
-  cloud:
-    config:
-      name: ecommerce # yml 파일명 앞부분
-  config:
-    import: optional:configserver:http://localhost:8888 # 구성정보 설정
+#  cloud:
+#    config:
+#      name: ecommerce # yml 파일명 앞부분
+#  config:
+#    import: optional:configserver:http://localhost:8888 # 구성정보 설정
 
 
 server:
@@ -42,5 +42,10 @@ eureka:
 greeting:
   message: Welcome to the User-Service
 
-
+# microservice 에서 configuration으로 가져와야할 것을 refresh 한다.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans
 
