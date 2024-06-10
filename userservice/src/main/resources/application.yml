@@ -15,20 +15,14 @@ spring:
       settings:
         web-allow-others: true
       path: /console
-
-  datasource:
-    url: jdbc:h2:~/db
-    username: sa
-  jpa:
-    hibernate:
-      ddl-auto: update
-
-
-#  cloud:
-#    config:
-#      name: ecommerce # yml 파일명 앞부분
-#  config:
-#    import: optional:configserver:http://localhost:8888 # 구성정보 설정
+#
+#  datasource:
+#    url: jdbc:h2:~/db
+#    username: sa
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+# -> config-server가 fetching하는 .yml로 이동
 
 
 server:
