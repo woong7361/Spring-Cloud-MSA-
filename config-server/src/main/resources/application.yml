@@ -15,13 +15,6 @@ spring:
           search-locations: file://${user.home}/workspace/git-local-repo
 
 
-
-#        git:
-##          uri: file:///home/woong/workspace/git-local-repo
-#
-#          uri: https://github.com/woong7361/spring-cloud-config
-#          username: woong7361
-
   rabbitmq:
     host: 127.0.0.1
     port: 5672
