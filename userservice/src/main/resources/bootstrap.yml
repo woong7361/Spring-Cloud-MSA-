@@ -2,7 +2,9 @@ spring:
   cloud:
     config:
       uri: http://127.0.0.1:8888
-      name: ecommerce
+      # name을 따로 명시하지 않고 (ex. ecommerce 처럼 -> ecommerce.yml) config server name으로 하면
+      # application.yml 이 작동한다.
+      name: config-server
 #
 #  profiles:
 #    active: prod

@@ -7,11 +7,14 @@ spring:
   profiles:
     active: native
 
+
   cloud:
     config:
       server:
         native:
           search-locations: file://${user.home}/workspace/git-local-repo
+
+
 
 #        git:
 ##          uri: file:///home/woong/workspace/git-local-repo
@@ -19,3 +22,17 @@ spring:
 #          uri: https://github.com/woong7361/spring-cloud-config
 #          username: woong7361
 #          password: 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
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    stream:
+      username: guest
+      password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
+
