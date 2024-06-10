@@ -21,7 +21,6 @@ spring:
 #
 #          uri: https://github.com/woong7361/spring-cloud-config
 #          username: woong7361
-#          password: <password>
 
   rabbitmq:
     host: 127.0.0.1
