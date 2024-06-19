@@ -1,0 +1,4 @@
+encrypt:
+  # 대칭키
+  key: abcdefghijklmnop123456789
+
